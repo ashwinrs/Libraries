@@ -16,6 +16,8 @@ int main(){
     LinkedList* l;
     l = new LinkedList();
     l->addFront(3);
+    l->addFront(4);
+    
     cout<<"hello world "<<l->front()<<"\n";
     
     return 0;

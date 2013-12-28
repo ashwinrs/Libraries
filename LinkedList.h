@@ -8,6 +8,7 @@
 #define _LinkedList_h
 
 #include "Node.h"
+#include <iostream>
 
 class LinkedList{
 public:
@@ -15,7 +16,7 @@ public:
     ~LinkedList();
     bool empty() const;
     const int front() const;
-    void addFront(const int data);
+    void addFront(const int );
     void removeFront();
 private:
     Node* head;

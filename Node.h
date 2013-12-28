@@ -13,7 +13,7 @@ class Node {
 private:
     Node* next;
     int data;
-    friend class LinkedList
+friend class LinkedList;
     
 };
 

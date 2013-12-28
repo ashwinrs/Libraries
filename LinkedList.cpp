@@ -22,21 +22,20 @@ bool LinkedList::empty() const{
     return head == NULL;
 }
 
-void LinkedList::removeFront() const{
-    Node* temp = head;
-    head = head->next;
-    delete temp;
-}
-
-int LinkedList::front() const{
+const int LinkedList::front() const{
     return head->data;
 }
 
 void LinkedList::addFront(const int d) {
     Node* temp = new Node;
     temp->data = d;
-    
-    head == new Node();
-    head->data = d;
 
+    head = new Node();
+    head->data = d;
+}
+
+void LinkedList::removeFront(){
+    Node* old = head;
+    head = old->next;
+    delete old;
 }

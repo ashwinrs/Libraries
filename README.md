@@ -1,3 +1,3 @@
 Libraries
 =========
-Custom implementation of some standart template libraries
+Custom implementation of some standard template libraries
